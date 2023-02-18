@@ -1,6 +1,7 @@
 resources:
 - argocd/consolenotification.yaml
 - argocd/namespace-cp4ba.yaml
+- argocd/namespace-ibm-common-services.yaml
 
 patches:
 - target:
