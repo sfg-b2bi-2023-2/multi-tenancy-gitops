@@ -1,6 +1,6 @@
 resources:
 - argocd/consolenotification.yaml
-- argocd/namespace-cp4bayaml
+- argocd/namespace-cp4ba.yaml
 
 patches:
 - target:
