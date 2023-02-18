@@ -106,6 +106,8 @@ spec:
     kind: PersistentVolume
   - group: ""
     kind: machineconfiguration
+  - group: "rbac.authorization.k8s.io"
+    kind: machineconfiguration
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
