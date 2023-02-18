@@ -1,5 +1,5 @@
 resources:
-
+- argocd/instances/ibm-cp4ba-baw.yaml
 patches:
 - target:
     group: argoproj.io
