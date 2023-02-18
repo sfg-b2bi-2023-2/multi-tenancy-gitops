@@ -104,16 +104,16 @@ spec:
     kind: CustomResourceDefinition
   - group: ""
     kind: PersistentVolume
-  - group: ""
-    kind: machineconfiguration
-  - group: "rbac.authorization.k8s.io"
-    kind: machineconfiguration
+  # - group: ""
+  #   kind: machineconfiguration
+  # - group: "rbac.authorization.k8s.io"
+  #   kind: machineconfiguration
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
     description: Read-only privileges to my-project
     policies:
-    - p, proj:my-project:read-only, applications, get, my-project/*, allow
+    - p, proj:my-project:read-only, applications, get, my-project/*, allow, machineconfiguration
     groups:
     - argocd-admins
 ---
