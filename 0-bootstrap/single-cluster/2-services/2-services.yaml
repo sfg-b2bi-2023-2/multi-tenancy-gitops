@@ -104,6 +104,8 @@ spec:
     kind: CustomResourceDefinition
   - group: ""
     kind: PersistentVolume
+  - group: ""
+    kind: machineconfiguration
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
